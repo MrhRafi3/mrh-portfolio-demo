@@ -1,41 +1,46 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-motion="on">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#090A0D" id="theme-color-meta" />
+    <meta name="theme-color" content="#090909" />
+    <title>MRH RAFI | Flutter App Developer & Mobile UI Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Mrh Rafi, a Flutter App Developer from Bangladesh building thoughtful, user-focused mobile applications with clean UI and strong algorithmic foundations in C++ and DSA."
+      content="Mrh Rafi — Flutter App Developer & Mobile UI Engineer from Dhaka, Bangladesh. Crafting high-performance mobile apps with fluid 60/120 FPS animations, clean Dart architecture, and strong C++/DSA foundations."
     />
-    <meta property="og:title" content="Mrh Rafi — Flutter App Developer" />
+    <link rel="canonical" href="https://mrhrafi3.github.io/mrh-rafi-portfolio/" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mrh Rafi" />
+    <meta property="og:title" content="MRH RAFI | Flutter App Developer & Mobile UI Engineer" />
     <meta
       property="og:description"
-      content="Thoughtful, user-focused mobile experiences built with Flutter and Dart. Explore real projects including Clocky and Expify Beta."
+      content="Every pixel has a purpose. High-performance Flutter apps and mobile interfaces engineered by Mrh Rafi."
     />
-    <meta property="og:type" content="website" />
-    <title>Mrh Rafi — Flutter App Developer</title>
-    <script>
-      (function () {
-        try {
-          var saved = localStorage.getItem('mrh-theme');
-          var theme = saved === 'dark' || saved === 'light' ? saved : 'dark';
-          document.documentElement.setAttribute('data-theme', theme);
-          document.documentElement.style.colorScheme = theme;
-          var meta = document.getElementById('theme-color-meta');
-          if (meta) {
-            meta.setAttribute(
-              'content',
-              theme === 'light' ? '#F8F9FA' : '#090A0D'
-            );
-          }
-        } catch (e) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-          document.documentElement.style.colorScheme = 'dark';
-        }
-      })();
-    </script>
+    <meta property="og:image" content="/images/rafi-portrait.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MRH RAFI | Flutter App Developer & Mobile UI Engineer" />
+    <meta
+      name="twitter:description"
+      content="Every pixel has a purpose. High-performance Flutter apps and mobile interfaces engineered by Mrh Rafi."
+    />
+    <meta name="twitter:image" content="/images/rafi-portrait.jpg" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" as="image" href="/images/rafi-portrait.jpg" fetchpriority="high" />
+
+    <!-- Google Fonts: Anton (Display), Caveat (Script), Manrope (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="root"></div>
